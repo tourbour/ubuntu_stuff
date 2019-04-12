@@ -1,3 +1,6 @@
+#!/bin/bash
+# Author - tourbour
+# License - WTFPL http://www.wtfpl.net/
 BGGREEN='\033[42m'     #  ${BGGREEN}
 NORMAL='\033[0m'      #  ${NORMAL}
 # УСТАНОВКА ТВИК УТИЛИТЫ:
@@ -29,7 +32,7 @@ sudo apt install -y libc6:i386 libasound2:i386 libasound2-data:i386 libasound2-p
 # КОДЕКИ, ДОПОЛНЕНИЯ
 echo -en "${BGGREEN} Устанавливаем кодеки, шрифты и прочие надобности ${NORMAL}"
 sleep 5
-sudo apt install -y ubuntu-restricted-extras libavcodec-extra browser-plugin-freshplayer-pepperflash build-essential libgtk2.0-dev cmake gparted mono* aspell aspell-ru p7zip-rar p7zip-full &&
+sudo apt install -y vlc smplayer ubuntu-restricted-extras libavcodec-extra browser-plugin-freshplayer-pepperflash build-essential libgtk2.0-dev cmake gparted mono* aspell aspell-ru p7zip-rar p7zip-full &&
 
 # АРХИВАТОРЫ
 echo -en "${BGGREEN} Устанавливаем набор различных архиваторов ${NORMAL}"
