@@ -1,7 +1,7 @@
 # УСТАНОВКА ТВИК УТИЛИТЫ:
 sudo apt install -y gnome-tweak-tool &&
 
-# ВЕРНУТЬ ДОПОЛНЕНИЯ:
+# ВЕРНУТЬ ДОПОЛНЕНИЯ ДЛЯ GNOME:
 sudo apt install -y chrome-gnome-shell &&
 
 # ТЕМЫ ИКОНОК NUMIX
@@ -29,14 +29,14 @@ sudo apt install -y oracle-java8-installer &&
 sudo apt install --reinstall amd64-microcode &&
 
 
-#ОТКЛЮЧЕНИЕ ЗАЩИТЫ ОТ УЯЗВИМОСТЕЙ SPECTRE и MELTDOWN(серьезно снижают производительность)
-#зайдите в файл конфигурации grub
-#sudo nano /etc/default/grub
-#и измените строк:
-#GRUB_CMDLINE_LINUX_DEFAULT=""
-#чтобы получилось так:
-#GRUB_CMDLINE_LINUX_DEFAULT="spectre_v2=off nopti pti=off"
-#если строка не пуста, добавьте значения через пробел к остальным
+# ОТКЛЮЧЕНИЕ ЗАЩИТЫ ОТ УЯЗВИМОСТЕЙ SPECTRE и MELTDOWN(серьезно снижают производительность)
+# зайдите в файл конфигурации grub
+# sudo nano /etc/default/grub
+# и измените строк:
+# GRUB_CMDLINE_LINUX_DEFAULT=""
+# чтобы получилось так:
+# GRUB_CMDLINE_LINUX_DEFAULT="spectre_v2=off nopti pti=off"
+# если строка не пуста, добавьте значения через пробел к остальным
 
 #NVIDIA NATIVE DRIVER
 sudo add-apt-repository -y ppa:graphics-drivers/ppa &&
