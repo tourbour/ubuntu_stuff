@@ -38,30 +38,12 @@ sleep 5
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt install -y oracle-java8-installer
 
-# ОБНОВЛЕНИЕ МИКРОКОДА INTEL
-echo -en "${BGGREEN} Обновляем микрокод процессора ${NORMAL}"
-sleep 5
-# sudo apt install --reinstall intel-microcode &&
-
-# ОБНОВЛЕНИЕ МИКРОКОДА AMD
-sudo apt install --reinstall amd64-microcode
-
-
-# ОТКЛЮЧЕНИЕ ЗАЩИТЫ ОТ УЯЗВИМОСТЕЙ SPECTRE и MELTDOWN(серьезно снижают производительность)
-# зайдите в файл конфигурации grub
-# sudo nano /etc/default/grub
-# и измените строк:
-# GRUB_CMDLINE_LINUX_DEFAULT=""
-# чтобы получилось так:
-# GRUB_CMDLINE_LINUX_DEFAULT="spectre_v2=off nopti pti=off"
-# если строка не пуста, добавьте значения через пробел к остальным
-
-#NVIDIA NATIVE DRIVER
+# РЕПОЗИТОРИЙ С ДРАЙВЕРАМИ NVIDIA
 echo -en "${BGGREEN} Добавляем репозиторий с проприетарными драйверами Nvidia ${NORMAL}"
 sleep 5
 sudo add-apt-repository -y ppa:graphics-drivers/ppa
 
-#TMP ПАПКУ В ОПЕРАТИВНУЮ ПАМЯТЬ
+# ПОМЕЩАЕМ ПАПКУ TMP В ОПЕРАТИВНУЮ ПАМЯТЬ
 echo -en "${BGGREEN} Помещаем папку для временных файлов в оперативную память ${NORMAL}"
 sleep 5
 echo 'tmpfs /tmp tmpfs noatime,nodiratime,mode=1777,size=50% 0 0' | sudo tee -a /etc/fstab
