@@ -13,7 +13,7 @@ sudo dpkg --add-architecture i386 &&
 sudo apt install -y libc6:i386 libasound2:i386 libasound2-data:i386 libasound2-plugins:i386 libgtk2.0-0:i386 libsdl2-2.0-0:i386 libsdl2-image-2.0-0:i386 libfreetype6:i386 libcurl3:i386 &&
 
 # КОДЕКИ, ДОПОЛНЕНИЯ
-sudo apt install -y ubuntu-restricted-extras libavcodec-extra libdvd-pkg browser-plugin-freshplayer-pepperflash build-essential libgtk2.0-dev cmake gparted mono* aspell aspell-ru p7zip-rar p7zip-full &&
+sudo apt install -y ubuntu-restricted-extras libavcodec-extra browser-plugin-freshplayer-pepperflash build-essential libgtk2.0-dev cmake gparted mono* aspell aspell-ru p7zip-rar p7zip-full &&
 
 # АРХИВАТОРЫ
 sudo apt install -y p7zip-rar rar unrar unace arj cabextract &&
