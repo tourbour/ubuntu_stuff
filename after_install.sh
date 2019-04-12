@@ -10,6 +10,10 @@ echo -en "${BGGREEN} Включаем расширения для Gnome ${NORMAL
 sleep 5
 sudo apt install -y chrome-gnome-shell
 
+# СВЕДЕНИЙ О СИСТЕМЕ
+echo "${BGGREEN} Ставим программу inxi, чтоб посмотреть на железки ${NORMAL}"
+sudo apt install -y inxi
+
 # ТЕМЫ ИКОНОК NUMIX
 echo -en "${BGGREEN} Добавляем репозиторий с темами и устанавливаем тему и значки Numix ${NORMAL}"
 sleep 5
