@@ -39,36 +39,8 @@ sudo apt install --reinstall amd64-microcode &&
 #если строка не пуста, добавьте значения через пробел к остальным
 
 #NVIDIA NATIVE DRIVER
-sudo add-apt-repository -y ppa:graphics-drivers/ppa &&
+#sudo add-apt-repository -y ppa:graphics-drivers/ppa &&
 
 #TMP ПАПКУ В ОПЕРАТИВНУЮ ПАМЯТЬ
-echo 'tmpfs /tmp tmpfs noatime,nodiratime,mode=1777,size=50% 0 0' | sudo tee -a /etc/fstab &&
+echo 'tmpfs /tmp tmpfs noatime,nodiratime,mode=1777,size=50% 0 0' | sudo tee -a /etc/fstab
 #Здесь size=50% устанавливает максимальный объём диска в половину всей физической памяти (это также и значение по умолчанию). Изменения вступят в силу после перезагрузки.
-
-#УСТАНОВКА OBS-STUDIO И ДОПОЛНЕНИЙ
-#Кодеки
-sudo add-apt-repository ppa:jonathonf/ffmpeg-4 &&
-sudo apt update &&
-sudo apt install -y ffmpeg x264 x265 &&
-#УСТАНОВКА САМОГО OBS-STUDIO
-sudo add-apt-repository -y ppa:obsproject/obs-studio &&
-sudo apt update &&
-sudo apt install -y obs-studio &&
-#УСТАНОВКА OBS-QTWEBKIT ДЛЯ OBS-STUDIO
-#sudo apt install git qtbase5-dev libqt5webkit5-dev
-#git clone https://github.com/bazukas/obs-qtwebkit.git
-#cd ~/obs-qtwebkit
-#make
-#make install
-#УСТАНОВКА ПЛАГИНА OBS-LINUXBROWSER, замена obs-qtwebkit, основан на Chromium OEM
-#sudo apt install cmake libgconf-2-4
-#скачиваем архив с плагином и распаковываем его: https://github.com/bazukas/obs-linuxbrowser/releases
-#или скачиваем в консоли
-#wget https://github.com/bazukas/obs-linuxbrowser/releases/download/0.6.0/linuxbrowser0.6.0-obs22.0.2-64bit.tgz
-#создаем папку плагины в конфигурации OBS-studio
-#mkdir -p $HOME/.config/obs-studio/plugins
-#далее распаковываем архив в папку с плагинами OBS-studio
-#tar xfvz linuxbrowser*.tgz -C $HOME/.config/obs-studio/plugins/
-#после запускаем OBS, он запуститься не сразу, так как подключает первый раз плагин.
-#как запустится, в источниках появится Linux Browser.
-
