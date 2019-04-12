@@ -1,7 +1,7 @@
-#УСТАНОВКА ТВИК УТИЛИТЫ:
+# УСТАНОВКА ТВИК УТИЛИТЫ:
 sudo apt install -y gnome-tweak-tool &&
 
-#ВЕРНУТЬ ДОПОЛНЕНИЯ:
+# ВЕРНУТЬ ДОПОЛНЕНИЯ:
 sudo apt install -y chrome-gnome-shell &&
 
 # ТЕМЫ ИКОНОК NUMIX
