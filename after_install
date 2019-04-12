@@ -34,7 +34,7 @@ sudo apt install --reinstall amd64-microcode &&
 #sudo nano /etc/default/grub
 #и измените строк:
 #GRUB_CMDLINE_LINUX_DEFAULT=""
-#что бы получилось так:
+#чтобы получилось так:
 #GRUB_CMDLINE_LINUX_DEFAULT="spectre_v2=off nopti pti=off"
 #если строка не пуста, добавьте значения через пробел к остальным
 
