@@ -39,7 +39,7 @@ sudo apt install --reinstall amd64-microcode &&
 #если строка не пуста, добавьте значения через пробел к остальным
 
 #NVIDIA NATIVE DRIVER
-#sudo add-apt-repository -y ppa:graphics-drivers/ppa &&
+sudo add-apt-repository -y ppa:graphics-drivers/ppa &&
 
 #TMP ПАПКУ В ОПЕРАТИВНУЮ ПАМЯТЬ
 echo 'tmpfs /tmp tmpfs noatime,nodiratime,mode=1777,size=50% 0 0' | sudo tee -a /etc/fstab
