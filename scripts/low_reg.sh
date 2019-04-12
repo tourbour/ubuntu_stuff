@@ -1,5 +1,6 @@
 #!/bin/bash
 # Рекурсивный перевод имен в указанной папке в нижний регистр
+# применение: ./low_reg.sh <PATH-TO-FOLDER>
 
 if [[ $# == 0 ]]; then
     echo "usage: lower PATH"
