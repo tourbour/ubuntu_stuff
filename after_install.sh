@@ -42,8 +42,9 @@ sudo apt install -y p7zip-rar rar unrar unace arj cabextract
 # ПАКЕТ JDK, JRE И ПЛАГИН ДЛЯ БРАУЗЕРА
 echo -en "${BGGREEN} Устанавливаем Java для системы и браузера ${NORMAL}"
 sleep 5
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo apt install -y oracle-java8-installer
+sudo add-apt-repository ppa:linuxuprising/java -y
+sudo apt update
+sudo apt install oracle-java11-installer -y
 
 # РЕПОЗИТОРИЙ С ДРАЙВЕРАМИ NVIDIA
 echo -en "${BGGREEN} Добавляем репозиторий с проприетарными драйверами Nvidia ${NORMAL}"
